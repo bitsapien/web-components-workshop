@@ -17,6 +17,10 @@ template.innerHTML = `
   .product-info span {
     margin-top: 1rem;
   }
+
+  ::slotted(div) {
+    color: grey;
+  }
 </style>
 <div class="basic-product">
 
