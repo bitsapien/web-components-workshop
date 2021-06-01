@@ -26,4 +26,5 @@
 * [9] Events
   * Make a button to show and hide price button
 * [10] Styling the slot from inside the component
+* [11] Styling the entire component
 
