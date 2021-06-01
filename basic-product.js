@@ -1,7 +1,10 @@
 class BasicProduct extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `<h2>${this.getAttribute('name')}</h2>`
+    this.attachShadow({ mode: 'open' })
+    const child = document.createElement('h2')
+    child.innerText = this.getAttribute('name')
+    this.shadowRoot.appendChild(child)
   }
 }
 
