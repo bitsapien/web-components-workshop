@@ -17,10 +17,13 @@
   * Add global styles and show how it affects stuff in the component
   * To add scoping, you'd like to create a shadow DOM
   * What is `attachShadow` and `mode` and `shadowRoot`
+  * Light DOM, shadow DOM and slot DON
 * [5] Templates
 * [6] Exercise : Add a product image and price
   * https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Iphone_back.jpg/220px-Iphone_back.jpg
 * [7] Slots
 * [8] Exercise: Add Styles
-* [8] Events
+* [9] Events
+  * Make a button to show and hide price button
+* [10] Styling the slot from inside the component
 
