@@ -7,6 +7,7 @@ template.innerHTML = `
 </style>
 <div class="basic-product">
   <h2> </h2>
+  <slot name="description"></slot>
 </div>
 `;
 
