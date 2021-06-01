@@ -16,4 +16,5 @@
 * [4] Styling and shadow DOM
   * Add global styles and show how it affects stuff in the component
   * To add scoping, you'd like to create a shadow DOM
-  * What is `attachShadow` and `mode`
+  * What is `attachShadow` and `mode` and `shadowRoot`
+* [5] Templates
