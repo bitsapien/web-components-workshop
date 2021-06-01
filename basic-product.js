@@ -73,6 +73,16 @@ class BasicProduct extends HTMLElement {
     }
   }
 
+  static get observedAttributes() {
+    return ["price"]
+  }
+
+  attributeChangedCallback(name, oldVal, newVal) {
+    if(name === 'price') {
+      this.shadowRoot.querySelector('.product-info span[data-id=price]').innerText = newVal
+    }
+  }
+
   connectedCallback() {
     this.shadowRoot.querySelector('button').addEventListener('click', () => this.togglePrice())
   }

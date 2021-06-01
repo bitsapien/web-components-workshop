@@ -28,4 +28,5 @@
 * [10] Styling the slot from inside the component
 * [11] Styling the entire component
 * [12] Styling the component based on parent :  dark mode
+* [13] Reacting to change : change price
 
