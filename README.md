@@ -13,3 +13,5 @@
   * Naming rules of tags
 * [3] Configurability
   * Pass in attribute, a product name and fetch using `getAttribute`
+* [4] Styling and shadow DOM
+  * Add global styles and show how it affects stuff in the component
