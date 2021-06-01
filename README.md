@@ -11,3 +11,5 @@
   * Talk about `this`
   * Show how to use `customElement.define`
   * Naming rules of tags
+* [3] Configurability
+  * Pass in attribute, a product name and fetch using `getAttribute`

@@ -1,7 +1,7 @@
 class BasicProduct extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `<h2> Mechanical Keyboard </h2>`
+    this.innerHTML = `<h2>${this.getAttribute('name')}</h2>`
   }
 }
 
