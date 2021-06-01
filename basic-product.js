@@ -1,13 +1,30 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <style>
-  h2 {
-    color: magenta;
+  .basic-product {
+    display: flex;
+    border: 1px gray solid;
+    max-width: 600px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    font-family: Arial;
+  }
+
+  .product-info {
+    padding-left: 1rem;
+  }
+
+  .product-info span {
+    margin-top: 1rem;
   }
 </style>
 <div class="basic-product">
-  <h2> </h2>
-  <slot name="description"></slot>
+
+  <div class="product-info">
+    <h2> </h2>
+    <slot name="description"></slot>
+    <span id="price"></span>
+  </div>
 </div>
 `;
 
@@ -20,7 +37,12 @@ class BasicProduct extends HTMLElement {
     if(this.getAttribute('image')) {
       const img = document.createElement('img')
       img.setAttribute('src', this.getAttribute('image'))
-      this.shadowRoot.appendChild(img)
+      this.shadowRoot.querySelector('.basic-product').prepend(img)
+    }
+
+    if(this.getAttribute('price')) {
+      const price = `Price: ${this.getAttribute('price')}`
+      this.shadowRoot.querySelector('.product-info span').innerText = price
     }
   }
 }
