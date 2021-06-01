@@ -8,20 +8,21 @@
       h2 {
         color: red;
       }
-      basic-product {
-        color: red;
-      }
     </style>
   </head>
-  <body>
+  <body class="dark">
     <h2> Hey hey! </h2>
 
-    <basic-product name="Apple iPhone" image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Iphone_back.jpg/220px-Iphone_back.jpg" price="10.0 €">
+    <basic-product name="Apple iPhone" image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Iphone_back.jpg/220px-Iphone_back.jpg" price="499.0 €">
       <div slot="description">
         The iPhone is a smartphone manufactured by <i> Apple </i>
       </div>
     </basic-product>
-    <basic-product name="Sony LED TV"></basic-product>
+    <basic-product name="Sony LED TV" price="400 €">
+      <div slot="description">
+        Just another TV
+      </div>
+    </basic-product>
 
     <script src="basic-product.js"></script>
   </body>

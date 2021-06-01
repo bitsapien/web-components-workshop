@@ -1,6 +1,11 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <style>
+  :host-context(body.dark) .basic-product {
+    background-color: black;
+    color: white;
+  }
+
   .basic-product {
     display: flex;
     border: 1px gray solid;
