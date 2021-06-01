@@ -16,6 +16,11 @@ class BasicProduct extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
     this.shadowRoot.querySelector('h2').innerText = this.getAttribute('name')
+    if(this.getAttribute('image')) {
+      const img = document.createElement('img')
+      img.setAttribute('src', this.getAttribute('image'))
+      this.shadowRoot.appendChild(img)
+    }
   }
 }
 
